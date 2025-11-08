@@ -1,0 +1,16 @@
+{
+  "name": "@extension/main",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "rk build"
+  },
+  "dependencies": {
+    "inversify": "catalog:",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@extension/cli": "workspace:*"
+  }
+}

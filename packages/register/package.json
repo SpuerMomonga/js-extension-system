@@ -1,0 +1,8 @@
+{
+  "name": "@extension/register",
+  "type": "module",
+  "main": "./src/index.ts",
+  "peerDependencies": {
+    "inversify": "catalog:"
+  }
+}

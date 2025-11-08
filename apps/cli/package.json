@@ -1,0 +1,27 @@
+{
+  "name": "@extension/cli",
+  "type": "module",
+  "bin": {
+    "rk": "./bin/raykit.js",
+    "rke": "./bin/raykit-extension.js"
+  },
+  "files": [
+    "README.md",
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.ts --configPlugin typescript"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@swc/core": "^1.15.0",
+    "rollup": "^4.53.1",
+    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-rm": "^1.0.2"
+  }
+}

@@ -1,0 +1,7 @@
+packages:
+  - 'apps/*'
+  - 'extensions/*'
+  - 'packages/*'
+
+catalog:
+  inversify: ^7.10.4

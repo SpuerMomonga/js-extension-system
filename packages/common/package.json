@@ -1,0 +1,8 @@
+{
+  "name": "@extension/common",
+  "type": "module",
+  "main": "./src/index.ts",
+  "peerDependencies": {
+    "inversify": "catalog:"
+  }
+}
