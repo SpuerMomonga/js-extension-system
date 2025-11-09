@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "main": "./dist/main.js",
   "scripts": {
+    "dev": "rk dev -config=./raykit.config.ts",
     "build": "rk build"
   },
   "dependencies": {

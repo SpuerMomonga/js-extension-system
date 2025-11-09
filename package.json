@@ -11,7 +11,8 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "pnpm -F @extension/cli build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",

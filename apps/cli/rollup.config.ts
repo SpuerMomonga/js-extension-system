@@ -12,7 +12,7 @@ const external = [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.pee
 
 export default defineConfig([
   {
-    input: ['index.ts', 'src/raykit.ts', 'src/raykit-extension.ts'],
+    input: ['src/raykit.ts', 'src/raykit-extension.ts'],
     output: [
       {
         dir: 'dist',
@@ -31,9 +31,9 @@ export default defineConfig([
       moduleSideEffects: false,
     },
   },
-  {
-    input: 'dist/types/index.d.ts',
-    output: [{ file: pkg.types, format: 'es' }],
-    plugins: [dts(), rm('dist/types', 'buildEnd')],
-  },
+  // {
+  //   input: 'dist/types/index.d.ts',
+  //   output: [{ file: pkg.types, format: 'es' }],
+  //   plugins: [dts(), rm('dist/types', 'buildEnd')],
+  // },
 ])
